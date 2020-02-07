@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3   
+# Result is here: https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python    
+# However, I got: cpu_n_iters = int(sys.argv[1]); IndexError: list index out of range    
 
 import multiprocessing
 import threading
