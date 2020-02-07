@@ -74,3 +74,5 @@ if __name__ == '__main__':
                 thread.join()
             results.append(time.time() - start_time)
         print(' '.join('{:.6e}'.format(result) for result in results))
+
+        
