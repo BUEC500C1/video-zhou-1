@@ -2,8 +2,6 @@
 
 #!/usr/bin/env python3
 
-import multiprocessing
-import threading
 import time
 import sys
 
@@ -15,7 +13,7 @@ def cpu_func(result, niters):
         result = (result * result * i + 2 * result * i * i + 3) % 10000000
     return result
 
-class CpuThread(threading.Thread):
+class CpuThread(Thread):
     def __init__(self, niters):
         super().__init__()
         self.niters = niters
@@ -23,7 +21,7 @@ class CpuThread(threading.Thread):
     def run(self):
         self.result = cpu_func(self.result, self.niters)
 
-class CpuProcess(multiprocessing.Process):
+class CpuProcess(Process):
     def __init__(self, niters):
         super().__init__()
         self.niters = niters
@@ -31,7 +29,7 @@ class CpuProcess(multiprocessing.Process):
     def run(self):
         self.result = cpu_func(self.result, self.niters)
 
-class IoThread(threading.Thread):
+class IoThread(Thread):
     def __init__(self, sleep):
         super().__init__()
         self.sleep = sleep
@@ -39,7 +37,7 @@ class IoThread(threading.Thread):
     def run(self):
         time.sleep(self.sleep)
 
-class IoProcess(multiprocessing.Process):
+class IoProcess(Process):
     def __init__(self, sleep):
         super().__init__()
         self.sleep = sleep
