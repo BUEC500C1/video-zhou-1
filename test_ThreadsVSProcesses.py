@@ -1,17 +1,17 @@
-import multiprocessing
-import threading
-import time
-import sys
+# test for task 0 - part 1
+
+import pytest
+import ThreadsVSProcesses
 
 if __name__ == '__main__':
     cpu_n_iters = int(sys.argv[1])
     sleep = 1
     cpu_count = multiprocessing.cpu_count()
     input_params = [
-        (CpuThread, cpu_n_iters),
-        (CpuProcess, cpu_n_iters),
-        (IoThread, sleep),
-        (IoProcess, sleep),
+        (ThreadsVSProcesses.CpuThread, cpu_n_iters),
+        (ThreadsVSProcesses.CpuProcess, cpu_n_iters),
+        (ThreadsVSProcesses.IoThread, sleep),
+        (ThreadsVSProcesses.IoProcess, sleep),
     ]
     header = ['nthreads']
     for thread_class, _ in input_params:
