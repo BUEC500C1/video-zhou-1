@@ -1,7 +1,7 @@
 # video-zhou-1    
 video-zhou-1 created by GitHub Classroom     
 
-Part1 - task 0:     
+Task 0 - part 1:     
 https://stackoverflow.com/questions/3044580/multiprocessing-vs-threading-python    
 ThreadsVSProcesses.py    
 test_ThreadsVSProcesses.py    
