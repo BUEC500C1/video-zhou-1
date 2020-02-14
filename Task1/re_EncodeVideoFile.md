@@ -1,4 +1,4 @@
-#! /bin/bash    
+# command line    
 
 # example code: 
 # to change the bitrate of the video, you would use it like this:   
