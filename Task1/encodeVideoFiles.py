@@ -21,8 +21,8 @@ subprocess.call(['ffmpeg', '-i', 'normal.avi', '-c:a', 'copy',
 # subprocess.call(['ffmpeg', '-i', 'output.mp4', '-t', '5', 'out.gif'])
 
 try:
-    f1 = open("output.mp4")
-    f2 = open("test.mp4")
+    f1 = open("normal.avi")
+    f2 = open("better.mp4")
 except IOError:
     print("File(s) not accessible")
 finally:
