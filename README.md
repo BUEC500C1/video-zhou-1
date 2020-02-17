@@ -20,6 +20,7 @@ Step 2:
 Develop the twitter functionality with an API   
 Step 3:   
 Integrate them      
+Task 2 can be [viewed here.](https://github.com/BUEC500C1/video-zhou-1/tree/master/Task2)    
    
 
 # Answers to the hw questions    
