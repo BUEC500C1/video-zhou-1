@@ -1,12 +1,14 @@
 # video-zhou-1    
 video-zhou-1 created by GitHub Classroom        
 Technology used in this repo:    
-Twitter tweepy API      
+Twitter tweepy API   
+[!tweepy](/imgs/tweepy.png)    
 
 ffmpeg-python     
 ![ffmpeg](/imgs/ffmpeg-python.PNG)   
 
 Own-built queue    
+![queue](/imgs/queue.png)   
 
 
 # What did I do?       
