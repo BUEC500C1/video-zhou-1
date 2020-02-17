@@ -2,7 +2,7 @@
 video-zhou-1 created by GitHub Classroom        
 Technology used in this repo:    
 Twitter tweepy API   
-[!tweepy](/imgs/tweepy.png)    
+![tweepy](/imgs/tweepy.png)    
 
 ffmpeg-python     
 ![ffmpeg](/imgs/ffmpeg-python.PNG)   
