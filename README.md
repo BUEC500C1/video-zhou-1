@@ -8,7 +8,7 @@ ffmpeg-python
 ![ffmpeg](/imgs/ffmpeg-python.PNG)   
 
 Own-built queue    
-![queue](/imgs/queue.png)   
+![queue](/imgs/queue.png | width=100)   
 
 
 # What did I do?       
