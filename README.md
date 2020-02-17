@@ -51,15 +51,46 @@ For Task 2 questions:
 
 
 # Setup     
+Clone my current repo:     
+https://github.com/BUEC500C1/video-zhou-1.git      
+OR    
+Use below command:    
+```
+git clone https://github.com/BUEC500C1/video-zhou-1.git   
+```
+   
+Go to [Task2](https://github.com/BUEC500C1/video-zhou-1/tree/master/Task2) folder.       
+Please go to tweepyInfo.py file and add in your own Tweepy API info in below code:    
+```
+  ##
+  ## Delete all for below info!!! !!! !!!!
+  ## Put your own twitter API info here
+  ##
+  consumer_key = ''
+  consumer_secret = ''
+  access_token = ''
+  access_token_secret = ''
+```
 
-
+Run the Python file:    
+```
+python sysQueue.py
+```
+     
+It will automatically show you images of default twitter users' tweets and 2 verisions of videos of these images.     
+If you would like to build videos for different twitter accounts, please go to sysQueue.py file and modify the contents of below line:   
+```
+keyNames = ['BU_ece', 'BU_CCD', 'BU_CAS', 'BU_Tweets', 'realDonaldTrump', 'BarackObama', 'RealTonyStark', '_Spiderman', 'amazon', 'Google', 'Microsoft', 'LinkedIn']
+```
 
 
 # Achievement    
-Output images will be like below:     
+<b>Output images will be like below:</b>        
 ![img](/imgs/outputImages.PNG)   
-    
-Output videos will be like below:     
+      
+         
+          
+<strong>Output videos will be like below:</strong>       
 ![vdio](/imgs/outputVideo.PNG)   
 
 
