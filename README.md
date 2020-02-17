@@ -1,5 +1,12 @@
 # video-zhou-1    
-video-zhou-1 created by GitHub Classroom       
+video-zhou-1 created by GitHub Classroom        
+Technology used in this repo:    
+Twitter tweepy API      
+
+ffmpeg-python     
+
+Own-built queue    
+
 
 # What did I do?       
 <strong>Task 0 - part 1:</strong>        
