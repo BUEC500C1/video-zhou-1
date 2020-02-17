@@ -42,13 +42,13 @@ For my laptop, I have 4 cores, 8 logical processors in my CPU. So in order to lo
 
 For Task 2 questions:    
 1. How many API calls you can handle simultaneously and why?    
-
+Currently I have 1 worker so I can only handle with 1 API call at this time. However, it is easy to implement more worker in my program and because I have 8 logical processors, I can build 7 more workers in order to handle with 8 API calls simultaneously.      
 
 2. For example, run different API calls at the same time?      
-
+Yes.    
 
 3. Split the processing of an API into multiple threads?     
-
+I splited them into 4 threads for my worker.    
 
 # Setup     
 Clone my current repo:     
