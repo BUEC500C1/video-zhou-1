@@ -1,6 +1,7 @@
 # video-zhou-1    
 video-zhou-1 created by GitHub Classroom        
-Technology used in this repo:    
+    
+<strong>Technology used in this repo:</strong>       
 Twitter tweepy API   
 ![tweepy](/imgs/tweepy.png)    
 
