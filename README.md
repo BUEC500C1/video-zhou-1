@@ -4,7 +4,7 @@ Technology used in this repo:
 Twitter tweepy API      
 
 ffmpeg-python     
-[!ffmpeg](/imgs/ffmpeg-python.PNG)   
+![ffmpeg](/imgs/ffmpeg-python.PNG)   
 
 Own-built queue    
 
