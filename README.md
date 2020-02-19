@@ -82,6 +82,24 @@ It will automatically show you images of default twitter users' tweets and 2 ver
 If you would like to build videos for different twitter accounts, please go to sysQueue.py file and modify the contents of below line:   
 ```
 keyNames = ['BU_ece', 'BU_CCD', 'BU_CAS', 'BU_Tweets', 'realDonaldTrump', 'BarackObama', 'RealTonyStark', '_Spiderman', 'amazon', 'Google', 'Microsoft', 'LinkedIn']
+```   
+For the process tracking UI, I have below code to take care of:    
+```
+numb = 0
+    qSize = q.qsize()
+    if item is None:
+      print("No item now, please put in some stuff!")
+      numb = 0
+      break
+
+    numb += 1
+    print("Currently process on " + str(numb) + " from current " + str(qSize) + " items")
+    #do_work(item)
+    # after get all images, then get videos
+    tweepy_info(item) 
+    imgToVideo(item)
+
+    print("Current worker is finished.")
 ```
 
 
@@ -94,6 +112,9 @@ keyNames = ['BU_ece', 'BU_CCD', 'BU_CAS', 'BU_Tweets', 'realDonaldTrump', 'Barac
 <strong>Output videos will be like below:</strong>       
 ![vdio](/imgs/outputVideo.PNG)   
 
-
+    
+<strong> User Interface for tracking process </strong>    
+![UI1](/imgs/UI1.PNG)     
+![UI2](/imgs/UI2.PNG)    
 
 
