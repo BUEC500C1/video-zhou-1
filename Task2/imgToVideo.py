@@ -16,7 +16,8 @@ def imgToVideo(twitterUsr):
   # ffmpeg -i img-%02d.png video_name.avi #2-digit number for name
   # set frame rate
   # ffmpeg -framerate 30 -i img%03d.png output.mp4  
-  subprocess.call(['ffmpeg', '-framerate', '1', '-i', 
+  # 0.3 for frame rate = 3s per image    
+  subprocess.call(['ffmpeg', '-framerate', '0.3', '-i', 
     fileName, 
     normalVideo])
 
