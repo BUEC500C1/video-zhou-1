@@ -1,5 +1,7 @@
 # video-zhou-1    
-video-zhou-1 created by GitHub Classroom        
+video-zhou-1 created by GitHub Classroom         
+<strong> Collect contents of tweets from targeted twitter user, convert the contents to images and videos.       
+My program provides 2 different versions of video: normal one and better one with better quality. </strong>    
     
 <strong>Technology used in this repo:</strong>       
 Twitter tweepy API   
