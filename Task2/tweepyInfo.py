@@ -6,20 +6,34 @@ HW 4 - #1
 
 import tweepy
 import re
+import configparser
+
 from textToImg import textToImg
+
+def get_key(path):
+  config = configparser.ConfigParser()
+  config.read(path)
+  auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(),
+    config.get('auth', 'consumer_secret').strip())
+  auth.set_access_token(config.get('auth', 'access_token').strip(),
+    config.get('auth', 'access_secret').strip())
+  self.api = tweepy.API(auth)
 
 def tweepy_info(twitterUsr):
   ##
   ## Delete all for below info!!! !!! !!!!
   ## Put your own twitter API info here
   ##
-  consumer_key = ''
-  consumer_secret = ''
-  access_token = ''
-  access_token_secret = ''
-  
-  auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
-  auth.set_access_token(access_token, access_token_secret)   
+  config = configparser.ConfigParser()
+  # path here is keys
+  config.read('keys')
+  auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(),
+    config.get('auth', 'consumer_secret').strip())
+  auth.set_access_token(config.get('auth', 'access_token').strip(),
+    config.get('auth', 'access_secret').strip())
+
+  #auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
+  #auth.set_access_token(access_token, access_token_secret)   
   api = tweepy.API(auth)
 
   search_results = api.user_timeline(twitterUsr)
@@ -49,4 +63,4 @@ def tweepy_info(twitterUsr):
 
 
 ## test only
-tweepy_info("BU_ece")
+# tweepy_info("BU_ece")
