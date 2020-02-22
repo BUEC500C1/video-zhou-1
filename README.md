@@ -61,19 +61,16 @@ git clone https://github.com/BUEC500C1/video-zhou-1.git
 ```
    
 Go to [Task2](https://github.com/BUEC500C1/video-zhou-1/tree/master/Task2) folder.       
-Please go to tweepyInfo.py file and add in your own Tweepy API info in below code:    
+Please go to keys file, to add in your own Tweepy API keys in below format:   
 ```
-  ##
-  ## Delete all for below info!!! !!! !!!!
-  ## Put your own twitter API info here
-  ##
-  consumer_key = ''
-  consumer_secret = ''
-  access_token = ''
-  access_token_secret = ''
+[auth]
+consumer_key = ****
+consumer_secret = ****
+access_token = ****
+access_secret = ****
 ```
 
-Run the Python file:    
+To run the whole program, next please run the Python file sysQueue.py:    
 ```
 python sysQueue.py
 ```
