@@ -82,6 +82,7 @@ If you would like to build videos for different twitter accounts, please go to s
 ```
 keyNames = ['BU_ece', 'BU_CCD', 'BU_CAS', 'BU_Tweets', 'realDonaldTrump', 'BarackObama', 'RealTonyStark', '_Spiderman', 'amazon', 'Google', 'Microsoft', 'LinkedIn']
 ```   
+Also for pytest, I tested results for whether required videos exist or not by comparing the names; All tests passed.    
 For the process tracking UI, I have below code to take care of:    
 ```
 numb = 0
