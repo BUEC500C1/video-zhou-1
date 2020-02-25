@@ -85,7 +85,10 @@ keyNames = ['BU_ece', 'BU_CCD', 'BU_CAS', 'BU_Tweets', 'realDonaldTrump', 'Barac
 ## Test   
 For pytest, I tested results for whether required videos exist or not by comparing the names; All tests passed.    
 
-For testing for whether keys file exist or not, whether keys file is empty or not, whether keys file has main and sub title or not; if answer for any of them is no, we need to call <b>get_oldJson</b> function. This function is in tweepyInfo.py file.      
+For testing for whether keys file exist or not, whether keys file is empty or not, whether keys file has main and sub title or not; if answer for any of them is no, we need to call <b>get_oldJson</b> function. This function is in tweepyInfo.py file.       
+
+<b>Caution: </b> In order to use my get_oldJson function successfully, you need to have json file for the desired twitter account first. I had already put in default 10 twitter user's tweets in jsonFolder; therefore, if keys file fail, we can get information from previous json file.    
+Moreover, every time out program successfully with right keys file, json files for those twitter account will get updated, too.    
 
 
 ## Processing tracking UI   
