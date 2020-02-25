@@ -82,7 +82,13 @@ If you would like to build videos for different twitter accounts, please go to s
 ```
 keyNames = ['BU_ece', 'BU_CCD', 'BU_CAS', 'BU_Tweets', 'realDonaldTrump', 'BarackObama', 'RealTonyStark', '_Spiderman', 'amazon', 'Google', 'Microsoft', 'LinkedIn']
 ```   
-Also for pytest, I tested results for whether required videos exist or not by comparing the names; All tests passed.    
+## Test   
+For pytest, I tested results for whether required videos exist or not by comparing the names; All tests passed.    
+
+For testing for whether keys file exist or not, whether keys file is empty or not, whether keys file has main and sub title or not; if answer for any of them is no, we need to call <b>get_oldJson</b> function. This function is in tweepyInfo.py file.      
+
+
+## Processing tracking UI   
 For the process tracking UI, I have below code to take care of:    
 ```
 numb = 0
