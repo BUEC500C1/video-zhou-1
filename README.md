@@ -92,24 +92,10 @@ Moreover, every time out program successfully with right keys file, json files f
 
 
 ## Processing tracking UI   
-For the process tracking UI, I have below code to take care of:    
-```
-numb = 0
-    qSize = q.qsize()
-    if item is None:
-      print("No item now, please put in some stuff!")
-      numb = 0
-      break
-
-    numb += 1
-    print("Currently process on " + str(numb) + " from current " + str(qSize) + " items")
-    #do_work(item)
-    # after get all images, then get videos
-    tweepy_info(item) 
-    imgToVideo(item)
-
-    print("Current worker is finished.")
-```
+For the process tracking UI, My program can check below steps:    
+1. Status of reading contents of keys file     
+2. Status of writing tweet contents into JSON file    
+3. Status of worker and threads     
 
 
 # Achievement    
@@ -117,7 +103,6 @@ numb = 0
 ![img](/imgs/outputImages.PNG)   
       
          
-          
 <strong>Output videos will be like below:</strong>       
 ![vdio](/imgs/outputVideo.PNG)   
 
