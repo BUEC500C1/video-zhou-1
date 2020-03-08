@@ -61,6 +61,9 @@ def tweepy_info(twitterUsr):
   finally:
     print('Checking the contents') 
 
+  auth = tweepy.OAuthHandler(config.get('auth', 'consumer_key').strip(),config.get('auth', 'consumer_secret').strip())
+  auth.set_access_token(config.get('auth', 'access_token').strip(),config.get('auth', 'access_secret').strip())
+
   api = tweepy.API(auth)
 
   search_results = api.user_timeline(twitterUsr)
